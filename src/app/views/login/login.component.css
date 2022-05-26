@@ -1,0 +1,54 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+  width: fit-content;
+  height: fit-content;
+}
+
+.login{
+  height: 80vh;
+}
+
+.login-form{
+  /* margin-top: 30%; */
+}
+
+.card-login{
+  border: none;
+}
+
+.card-login .card-header {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.card-login .card-header h4{
+  font-size: 1.1rem;
+}
+
+.card-login .card-body input{
+  background-color:#F4F4F4 ;
+}
+
+.card-login .card-footer{
+  background-color: #fff;
+  border: none;
+}
+
+.login-button{
+  background-color: #4B4D9F;
+  border: #4B4D9F;
+  cursor: pointer;
+}
+
+.login-img{
+  background-image: url('../../../assets/banner_login_2.png');
+  background-size: cover;
+  /* background-color: #56406f; */
+  background-repeat: no-repeat;
+
+}
+
+

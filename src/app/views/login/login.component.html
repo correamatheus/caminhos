@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <div class="container">
+        <img
+          src="../../../assets/logo_irium.webp"
+          class="logo pt-5"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="container login">
+        <form
+          [formGroup]="loginForm"
+          (submit)="login()"
+          class="login-form mt-5"
+        >
+          <div class="card text-center card-login">
+            <div class="card-header">
+              <h4>Faça o login</h4>
+            </div>
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  formControlName="email"
+                  formName="email"
+                  aria-describedby="email"
+                  placeholder="Email"
+                />
+                <span class="input-group-text"
+                  ><fa-icon [icon]="faUser"></fa-icon
+                ></span>
+              </div>
+
+              <div class="input-group mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="senha"
+                  formControlName="senha"
+                  formName="senha"
+                  aria-describedby="password"
+                  placeholder="Senha"
+                /><span class="input-group-text"
+                  ><fa-icon [icon]="faKey"></fa-icon
+                ></span>
+              </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <input
+                class="btn btn-primary me-md-2 login-button mb-2"
+                type="submit"
+                name="login"
+                [disabled]="loginForm.invalid"
+                [value]="(isLogging) ? 'Entrando...' : 'Entrar'"
+              >
+            </div>
+
+            <!-- FOOTER -->
+            <div class="card-footer text-muted">Esqueceu senha?</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-12 login-img"></div>
+  </div>
+</div>

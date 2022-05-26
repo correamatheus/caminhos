@@ -1,0 +1,47 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho-menu{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 40%;
+}
+
+
+.nav-item {
+  padding-left: .50rem;
+  padding-right: .50rem;
+}
+
+.nav-item:hover {
+  background-color: #5B3D6A;
+  border-radius: 10px;
+  transition: 1s;
+
+}
+
+.active{
+  color: #5B3D6A !important;
+  font-weight: 800;
+}
+
+.nav-link:hover{
+   color: #fff !important;
+}
+
+.cabecalho{
+ border-bottom: #000;
+}
+
+@media screen and (max-width: 432px) {
+  .navbar-nav{
+    flex-direction: row;
+    margin-left: 0;
+  }
+
+  .cabecalho-perfil{
+    position: absolute;
+  }
+
+}
